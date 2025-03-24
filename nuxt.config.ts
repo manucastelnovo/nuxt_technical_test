@@ -7,8 +7,12 @@ export default defineNuxtConfig({
   modules: [
     "@nuxt/eslint",
     "@nuxt/ui",
-    "@pinia/nuxt", // required
+    "@pinia/nuxt",
+    '@nuxtjs/color-mode'
   ],
+  colorMode: {
+    classSuffix:''
+  },
   css: ["~/assets/css/main.css"],
   vite: {
     plugins: [tailwindcss()],
