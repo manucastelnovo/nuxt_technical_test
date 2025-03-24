@@ -1,5 +1,24 @@
 @import "tailwindcss";
 html {
-    -webkit-text-size-adjust: none;
-  }
-  
+  -webkit-text-size-adjust: none;
+}
+
+:root {
+  --color-bg: 255 255 255; /* Blanco */
+  --color-text: 0 0 0; /* Negro */
+}
+
+.dark {
+  --color-bg: 17 24 39; /* Gris oscuro */
+  --color-text: 255 255 255; /* Blanco */
+}
+
+body {
+  background-color: rgb(var(--color-bg));
+  color: rgb(var(--color-text));
+}
+
+thead{
+  background-color: rgb(var(--color-bg));
+  color: rgb(var(--color-text));
+}
