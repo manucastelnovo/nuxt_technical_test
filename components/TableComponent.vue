@@ -87,13 +87,8 @@
                   {{ photo.thumbnailUrl }}
                 </td>
               </tr>
-              <tr ref="target" class="h-10 w-full dis" />
-              <tr
-                v-if="photoStore.isLoading"
-                class="w-[600px] flex justify-center mt-4"
-              >
-                <CircularProgress />
-              </tr>
+              <tr ref="target" class="h-10 w-full outline-none" />
+              
             </tbody>
           </table>
         </div>
